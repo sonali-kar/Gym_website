@@ -11,7 +11,7 @@
     body{
         margin:0px;
         padding:0px;
-        background: url('img/bg.jpg');
+        background: url('img/ss.jpg');
         color: white;
     }
     .left{
@@ -34,14 +34,41 @@
         display: inline-block;
         border: 2px solid blue;
         }
+        .navbar{
+            display: inline-block;
+        
+        }
+        .navbar li{
+            display: inline-block;
+        }
+        
+        .navbar li a{
+            color:white;
+            text-decoration: none;
+            padding: 34px 23px;
+            font-size: 15px; 
+        }
+        .navbar li a:hover,
+       .navbar li a.active {
+        text-decoration: underline;
+        color: grey;
+
+    }
+        
 </style>
 <body>
     <header class ="header">
         <div class ="left">
-      I am left
+            I am left
         </div>
         <div class ="mid">
-        I am mid    
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href ="#">About Us</a></li>
+                <li><a href ="#">Fitness Calculator</a></li>
+                <li><a href ="#">Contact Us</a></li>
+            </ul>
+       
         </div>
         <div class ="right">
           I am right  
