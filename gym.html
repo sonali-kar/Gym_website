@@ -61,23 +61,44 @@
 
     }
     .btn{
+        font-family: 'Baloo Bhai', cursive;
+        margin: 0px 9px;
         background-color: black;
         color: white;
         padding: 4px 14px;
-        cursor: pointer;
-        font-family:'Baloo Bhai 2', cursive ;
+        border: 2px solid grey;
         border-radius: 10px;
-        border-color: blue;
+        font-size: 20px;
+        cursor: pointer;
     }
     .btn:hover{
         background-color: rgb(107, 100, 100);
     }
     .container{
-        border: 2px solid red;
-        margin: 40px 40px;
-        margin-left:4px ;
-        padding: 2px 2px;
+        margin-left: 20px
+        margin: 30px 40px;
+        padding: 75px;
         width: 33%;
+        border-radius: 28px;
+    }
+    .form-group input {
+        font-family: 'Baloo Bhai', cursive;
+        text-align: center;
+        display: block;
+        width: 508px;
+        padding: 1px;
+        border: 2px solid black;
+        margin: 11px auto;
+        font-size: 25px;
+        border-radius: 8px;
+    }
+    .container h1 {
+        text-align: center;
+    }
+    .container button {
+        display: block;
+        width: 74%;
+        margin: 20px auto;
     }
     
 
@@ -93,17 +114,39 @@
                 <li><a href="#" class="active">Home</a></li>
                 <li><a href ="#">About Us</a></li>
                 <li><a href ="#">Fitness Calculator</a></li>
-                <li><a href ="#">Contact Us</a></li>
+                <li><a href ="#">Coaches</a></li>
             </ul>
        
         </div>
         <div class ="right">
-          <button class ="btn">Register now</button> 
+          <button class ="btn">Contact Us</button> 
           <!--<button class ="btn"></button>-->
         </div>
     </header>
     <div class="container">
-        container
+        <h1>Join us now</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Locality">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Email Id">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Phone Number">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
     </div>
     
 </body>
